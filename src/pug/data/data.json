@@ -1,0 +1,21 @@
+{
+	"footer": {
+		"socials": {}
+	},
+	"menu": [
+		{
+			"href": "index.html",
+			"name": "Главная"
+		}
+	],
+	"nav": {
+		"logo": {
+			"src": "/img/logo.png",
+			"alt": "",
+			"width": "",
+			"height": "",
+			"href": "index.html",
+			"name": ""
+		}
+	}
+}

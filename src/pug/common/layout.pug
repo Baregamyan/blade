@@ -1,0 +1,11 @@
+doctype html
+block vars
+html(lang="ru")
+  include head.pug
+  body.nojs
+    include svg.pug
+    include /blocks/header.pug
+    main
+      block content
+    include /blocks/footer.pug
+    script(src="js/index.js")
