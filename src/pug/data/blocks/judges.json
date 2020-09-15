@@ -1,0 +1,76 @@
+{
+  "judges": {
+    "number": "03",
+    "title": "Судьи BFW`19",
+    "cards": [
+      {
+        "photo": {
+          "src": "https://picsum.photos/454/382",
+          "alt": "",
+          "width": "454",
+          "height": "382"
+        },
+        "name": "Давис</br>Бертанс",
+        "country": "Литва",
+        "desc": "Владелец модного дома в Литве.Судья показов young blood Vilnus.",
+        "socials": [
+          {
+            "modyfier": "facebook",
+            "href": "#nowhere",
+            "name": "Фейсбук"
+          }, {
+            "modyfier": "twitter",
+            "href": "#nowhere",
+            "name": "Твиттер"
+          }
+        ]
+      }, {
+        "photo": {
+          "src": "https://picsum.photos/454/382",
+          "alt": "",
+          "width": "454",
+          "height": "382"
+        },
+        "name": "Георгий</br>Рубильников",
+        "country": "Россия",
+        "desc": "Дизайнер, работающий с Gucci, владелец салона в Санкт-Петербурге.",
+        "socials": [
+          {
+            "modyfier": "instagram",
+            "href": "#nowhere",
+            "name": "Инстаграм"
+          }, {
+            "modyfier": "facebook",
+            "href": "#nowhere",
+            "name": "Фейсбук"
+          }, {
+            "modyfier": "twitter",
+            "href": "#nowhere",
+            "name": "Твиттер"
+          }
+        ]
+      }, {
+        "photo": {
+          "src": "https://picsum.photos/454/382",
+          "alt": "",
+          "width": "454",
+          "height": "382"
+        },
+        "name": "Давид</br>Гегенешвили",
+        "country": "Грузия",
+        "desc": "Создатель Georgia Runway Project. Главный судья на young blood Moscow.",
+        "socials": [
+          {
+            "modyfier": "instagram",
+            "href": "#nowhere",
+            "name": "Инстаграм"
+          }, {
+            "modyfier": "facebook",
+            "href": "#nowhere",
+            "name": "Фейсбук"
+          }
+        ]
+      }
+    ]
+  }
+}

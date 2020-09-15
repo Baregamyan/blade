@@ -1,0 +1,51 @@
+{
+  "about": {
+    "number": "01",
+    "title": "Показ лучших молодых дизайнеров России",
+    "details": [
+      {
+        "modyfier": "date",
+        "text": "18 ноября<br>12<sup>30</sup> — 20<sup>00</sup>",
+        "datetime": "2019-11-18T12:30"
+      }, {
+        "modyfier": "location",
+        "text": "Москва<br>Лофт-цент «Эдем»"
+      }, {
+        "modyfier": "aword",
+        "text": "Победитель едет<br>на показ Blade в Париж!"
+      }
+    ],
+    "bookButton": {
+      "href": "",
+      "text": "Бронь билета"
+    },
+    "socials": [
+      {
+        "modyfier": "facebook",
+        "href": "#nowhere",
+        "name": "Фейсбук"
+      }, {
+        "modyfier": "instagram",
+        "href": "#nowhere",
+        "name": "Инстаграм"
+      }, {
+        "modyfier": "twitter",
+        "href": "#nowhere",
+        "name": "Твиттер"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://picsum.photos/787/880",
+        "alt": "",
+        "width": "787",
+        "height": "880"
+      }, {
+        "src": "https://picsum.photos/787/880",
+        "alt": "",
+        "width": "787",
+        "height": "880"
+      }
+    ] 
+  }
+}

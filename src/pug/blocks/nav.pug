@@ -1,4 +1,9 @@
 nav.nav
-  a.nav__logo(href=mainPage?null:nav.logo.href)
-    img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
+  a.nav__logo(href=data.main ? null : nav.logo.href)
+    img(src=nav.logo.src alt=nav.logo.alt width=nav.logo.width height=nav.logo.height)
+  +hashtag(hashtag.blade, 'nav')
   include menu.pug
+  select.nav__lang-select
+    each lang in nav.langSelect
+      option.nav__lang-item(selected = lang.isSelected) #{lang.lang}
+

@@ -1,8 +1,30 @@
 {
-  "menu": [
-    {
-      "href": "index.html",
-      "name": "Главная"
-    }
-  ]
+  "menu": {
+    "button": {
+      "aria": {
+        "label": "Конпка открыть меню",
+        "isHaspopup": "true",
+        "isExpanded": "true",
+        "controls": "menu"
+      }
+    }, 
+    "list": [
+      {
+        "href": "index.html",
+        "name": "Главная"
+      }, {
+        "href": "#participants",
+        "name": "Участники"
+      }, {
+        "href" : "#jury",
+        "name": "Жюри"
+      }, {
+        "href": "#tickets",
+        "name": "Билеты"
+      }, {
+        "href": "#contacts",
+        "name": "Контакты"
+      }
+    ]
+  }
 }

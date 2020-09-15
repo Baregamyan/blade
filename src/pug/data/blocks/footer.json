@@ -1,7 +1,81 @@
 {
   "footer": {
-    "socials": {
-
-    }
+    "number": "05",
+    "title": "Свяжитесь с нами",
+    "list": [
+      {
+        "subtitle": "Офис продаж", 
+        "type": "sales",
+        "address": "363561, Москва ул. Пушкина 17/1"
+      }, {
+        "subtitle": "Для связи",
+        "type": "connect",
+        "phone": {
+          "href": "tel:+7(924)4567890",
+          "text": "+7 (924) 456 78 90",
+          "ariaLabel": "Контактный номер телефона"
+        },
+        "email": {
+          "href": "malito:bfw@gmail.com",
+          "text": "bfw@gmail.com",
+          "ariaLabel": "Контактный электронный адрес"
+        }
+      }, {
+        "subtitle": "Подпишитесь",
+        "type": "socials",
+        "list": [
+          {
+            "modyfier": "facebook",
+            "href": "#nowhere",
+            "name": "Фейсбук"
+          }, {
+            "modyfier": "instagram",
+            "href": "#nowhere",
+            "name": "Инстаграм"
+          }, {
+            "modyfier": "twitter",
+            "href": "#nowhere",
+            "name": "Твиттер"
+          }
+        ]
+      }
+    ],
+    "map": {
+      "img": {
+        "src": "https://picsum.photos/810/462",
+        "width": "810",
+        "height": "462",
+        "alt": "Наше местоположение на карте"
+      }
+    },
+    "form": {
+      "title": "Форма обратной связи",
+      "lead": "Отсались вопросы? Спросите нас! Мы ответим!",
+      "fields": [
+        {
+          "label": "Имя",
+          "id": "clientName",
+          "isTextarea": false,
+          "type": "text",
+          "name": "name",
+          "placeholder": "Введите имя"
+        }, {
+          "label": "Email",
+          "id": "clientEmail",
+          "isTextarea": false,
+          "type": "email",
+          "name": "email",
+          "placeholder": "Задайте любой вопрос"
+        }, {
+          "label": "Сообщение",
+          "id": "clientMessage",
+          "isTextarea": true,
+          "type": null,
+          "name": "feedback",
+          "placeholder": "Задайте любой вопрос"
+        }
+      ],
+      "button": "Отправить"
+    }    
   }
 }

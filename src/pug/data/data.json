@@ -1,21 +1,488 @@
 {
-	"footer": {
-		"socials": {}
+	"about": {
+		"number": "01",
+		"title": "Показ лучших молодых дизайнеров России",
+		"details": [
+			{
+				"modyfier": "date",
+				"text": "18 ноября<br>12<sup>30</sup> — 20<sup>00</sup>",
+				"datetime": "2019-11-18T12:30"
+			},
+			{
+				"modyfier": "location",
+				"text": "Москва<br>Лофт-цент «Эдем»"
+			},
+			{
+				"modyfier": "aword",
+				"text": "Победитель едет<br>на показ Blade в Париж!"
+			}
+		],
+		"bookButton": {
+			"href": "",
+			"text": "Бронь билета"
+		},
+		"socials": [
+			{
+				"modyfier": "facebook",
+				"href": "#nowhere",
+				"name": "Фейсбук"
+			},
+			{
+				"modyfier": "instagram",
+				"href": "#nowhere",
+				"name": "Инстаграм"
+			},
+			{
+				"modyfier": "twitter",
+				"href": "#nowhere",
+				"name": "Твиттер"
+			}
+		],
+		"photos": [
+			{
+				"src": "https://picsum.photos/787/880",
+				"alt": "",
+				"width": "787",
+				"height": "880"
+			},
+			{
+				"src": "https://picsum.photos/787/880",
+				"alt": "",
+				"width": "787",
+				"height": "880"
+			}
+		]
 	},
-	"menu": [
-		{
-			"href": "index.html",
-			"name": "Главная"
+	"footer": {
+		"number": "05",
+		"title": "Свяжитесь с нами",
+		"list": [
+			{
+				"subtitle": "Офис продаж",
+				"type": "sales",
+				"address": "363561, Москва ул. Пушкина 17/1"
+			},
+			{
+				"subtitle": "Для связи",
+				"type": "connect",
+				"phone": {
+					"href": "tel:+7(924)4567890",
+					"text": "+7 (924) 456 78 90",
+					"ariaLabel": "Контактный номер телефона"
+				},
+				"email": {
+					"href": "malito:bfw@gmail.com",
+					"text": "bfw@gmail.com",
+					"ariaLabel": "Контактный электронный адрес"
+				}
+			},
+			{
+				"subtitle": "Подпишитесь",
+				"type": "socials",
+				"list": [
+					{
+						"modyfier": "facebook",
+						"href": "#nowhere",
+						"name": "Фейсбук"
+					},
+					{
+						"modyfier": "instagram",
+						"href": "#nowhere",
+						"name": "Инстаграм"
+					},
+					{
+						"modyfier": "twitter",
+						"href": "#nowhere",
+						"name": "Твиттер"
+					}
+				]
+			}
+		],
+		"map": {
+			"img": {
+				"src": "https://picsum.photos/810/462",
+				"width": "810",
+				"height": "462",
+				"alt": "Наше местоположение на карте"
+			}
+		},
+		"form": {
+			"title": "Форма обратной связи",
+			"lead": "Отсались вопросы? Спросите нас! Мы ответим!",
+			"fields": [
+				{
+					"label": "Имя",
+					"id": "clientName",
+					"isTextarea": false,
+					"type": "text",
+					"name": "name",
+					"placeholder": "Введите имя"
+				},
+				{
+					"label": "Email",
+					"id": "clientEmail",
+					"isTextarea": false,
+					"type": "email",
+					"name": "email",
+					"placeholder": "Задайте любой вопрос"
+				},
+				{
+					"label": "Сообщение",
+					"id": "clientMessage",
+					"isTextarea": true,
+					"type": null,
+					"name": "feedback",
+					"placeholder": "Задайте любой вопрос"
+				}
+			],
+			"button": "Отправить"
 		}
-	],
+	},
+	"hashtag": {
+		"blade": "#bladefashion2019"
+	},
+	"judges": {
+		"number": "03",
+		"title": "Судьи BFW`19",
+		"cards": [
+			{
+				"photo": {
+					"src": "https://picsum.photos/454/382",
+					"alt": "",
+					"width": "454",
+					"height": "382"
+				},
+				"name": "Давис</br>Бертанс",
+				"country": "Литва",
+				"desc": "Владелец модного дома в Литве.Судья показов young blood Vilnus.",
+				"socials": [
+					{
+						"modyfier": "facebook",
+						"href": "#nowhere",
+						"name": "Фейсбук"
+					},
+					{
+						"modyfier": "twitter",
+						"href": "#nowhere",
+						"name": "Твиттер"
+					}
+				]
+			},
+			{
+				"photo": {
+					"src": "https://picsum.photos/454/382",
+					"alt": "",
+					"width": "454",
+					"height": "382"
+				},
+				"name": "Георгий</br>Рубильников",
+				"country": "Россия",
+				"desc": "Дизайнер, работающий с Gucci, владелец салона в Санкт-Петербурге.",
+				"socials": [
+					{
+						"modyfier": "instagram",
+						"href": "#nowhere",
+						"name": "Инстаграм"
+					},
+					{
+						"modyfier": "facebook",
+						"href": "#nowhere",
+						"name": "Фейсбук"
+					},
+					{
+						"modyfier": "twitter",
+						"href": "#nowhere",
+						"name": "Твиттер"
+					}
+				]
+			},
+			{
+				"photo": {
+					"src": "https://picsum.photos/454/382",
+					"alt": "",
+					"width": "454",
+					"height": "382"
+				},
+				"name": "Давид</br>Гегенешвили",
+				"country": "Грузия",
+				"desc": "Создатель Georgia Runway Project. Главный судья на young blood Moscow.",
+				"socials": [
+					{
+						"modyfier": "instagram",
+						"href": "#nowhere",
+						"name": "Инстаграм"
+					},
+					{
+						"modyfier": "facebook",
+						"href": "#nowhere",
+						"name": "Фейсбук"
+					}
+				]
+			}
+		]
+	},
+	"menu": {
+		"button": {
+			"aria": {
+				"label": "Конпка открыть меню",
+				"isHaspopup": "true",
+				"isExpanded": "true",
+				"controls": "menu"
+			}
+		},
+		"list": [
+			{
+				"href": "index.html",
+				"name": "Главная"
+			},
+			{
+				"href": "#participants",
+				"name": "Участники"
+			},
+			{
+				"href": "#jury",
+				"name": "Жюри"
+			},
+			{
+				"href": "#tickets",
+				"name": "Билеты"
+			},
+			{
+				"href": "#contacts",
+				"name": "Контакты"
+			}
+		]
+	},
 	"nav": {
 		"logo": {
 			"src": "/img/logo.png",
-			"alt": "",
-			"width": "",
-			"height": "",
-			"href": "index.html",
-			"name": ""
+			"alt": "Лого агенства Blade",
+			"width": "10",
+			"height": "10",
+			"href": "index.html"
+		},
+		"langSelect": [
+			{
+				"lang": "РУС",
+				"isSelected": true
+			},
+			{
+				"lang": "ENG",
+				"isSelected": false
+			}
+		]
+	},
+	"pageNav": {
+		"buttons": [
+			{
+				"modifyer": "up",
+				"name": "Предыдущий экран"
+			},
+			{
+				"modifyer": "up",
+				"name": "Предыдущий экран"
+			}
+		],
+		"total": "05"
+	},
+	"participants": {
+		"number": "02",
+		"title": "Участники",
+		"cards": [
+			{
+				"desc": "Классика, нуар",
+				"photos": [
+					{
+						"src": "https://picsum.photos/448/580",
+						"alt": "Фото 1 «Классика, нуар»",
+						"width": "448",
+						"height": "580"
+					},
+					{
+						"src": "https://picsum.photos/448/580",
+						"alt": "Фото 2 «Классика, нуар»",
+						"width": "448",
+						"height": "580"
+					},
+					{
+						"src": "https://picsum.photos/448/580",
+						"alt": "Фото 3 «Классика, нуар»",
+						"width": "448",
+						"height": "580"
+					}
+				],
+				"author": {
+					"name": "Дэвид<br>Робинсон",
+					"country": "США",
+					"socials": [
+						{
+							"modyfier": "twitter",
+							"href": "#nowhere",
+							"name": "Твиттер"
+						},
+						{
+							"modyfier": "facebook",
+							"href": "#nowhere",
+							"name": "Фейсбук"
+						},
+						{
+							"modyfier": "twitter",
+							"href": "#nowhere",
+							"name": "Твиттер"
+						}
+					]
+				}
+			}
+		]
+	},
+	"tickets": {
+		"number": "04",
+		"title": "Билеты",
+		"payment": {
+			"text": "Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций)и произвести оплату онлайн. Мы принимаем оплату:",
+			"list": [
+				{
+					"src": "https://picsum.photos/47/15",
+					"alt": "Карты Виза",
+					"width": "47",
+					"height": "15"
+				},
+				{
+					"src": "https://picsum.photos/47/15",
+					"alt": "Эпл Пей",
+					"width": "47",
+					"height": "15"
+				},
+				{
+					"src": "https://picsum.photos/47/15",
+					"alt": "Карты Мастеркарт",
+					"width": "47",
+					"height": "15"
+				},
+				{
+					"src": "https://picsum.photos/47/15",
+					"alt": "Пейпал",
+					"width": "47",
+					"height": "15"
+				}
+			]
+		},
+		"contact": {
+			"text": "По всем вопросам, связанным с покупокй, возвратомили предлагаемыми опциями, вы можете обратитьсяк нашему консультанту по номеру:",
+			"phone": {
+				"text": "+7 (924) 456 78 90",
+				"href": "tel:+7(924)4567890",
+				"ariaLabel": "Позвонить по номеру телефона"
+			}
+		},
+		"optionsTable": {
+			"heads": [
+				{
+					"name": "Опции",
+					"modyfier": "option"
+				},
+				{
+					"name": "Зритель",
+					"modyfier": "guest"
+				},
+				{
+					"name": "Оптиум",
+					"modyfier": "optium"
+				},
+				{
+					"name": "Vip",
+					"modyfier": "vip"
+				}
+			],
+			"rows": [
+				{
+					"name": "Пакет гостя форума",
+					"checks": [
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						}
+					]
+				},
+				{
+					"name": "Церемония открытия",
+					"checks": [
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						}
+					]
+				},
+				{
+					"name": "Возможность голосовать",
+					"checks": [
+						{
+							"isChecked": false
+						},
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						}
+					]
+				},
+				{
+					"name": "Доступ за кулисы",
+					"checks": [
+						{
+							"isChecked": false
+						},
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						}
+					]
+				},
+				{
+					"name": "Эксклюзив от кутюрье",
+					"checks": [
+						{
+							"isChecked": false
+						},
+						{
+							"isChecked": false
+						},
+						{
+							"isChecked": true
+						}
+					]
+				}
+			],
+			"buttons": [
+				{
+					"text": null
+				},
+				{
+					"text": "Купить",
+					"href": "#nowhere"
+				},
+				{
+					"text": "Купить",
+					"href": "#nowhere"
+				},
+				{
+					"text": "Купить",
+					"href": "#nowhere"
+				}
+			]
 		}
 	}
 }

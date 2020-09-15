@@ -1,0 +1,129 @@
+{
+  "tickets": {
+    "number": "04",
+    "title": "Билеты",
+    "payment": {
+      "text": "Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций)и произвести оплату онлайн. Мы принимаем оплату:",
+      "list": [
+        {
+          "src": "https://picsum.photos/47/15",
+          "alt": "Карты Виза",
+          "width": "47",
+          "height": "15"
+        }, {
+          "src": "https://picsum.photos/47/15",
+          "alt": "Эпл Пей",
+          "width": "47",
+          "height": "15"
+        }, {
+          "src": "https://picsum.photos/47/15",
+          "alt": "Карты Мастеркарт",
+          "width": "47",
+          "height": "15"
+        }, {
+          "src": "https://picsum.photos/47/15",
+          "alt": "Пейпал",
+          "width": "47",
+          "height": "15"
+        }
+      ]
+    },
+    "contact": {
+      "text": "По всем вопросам, связанным с покупокй, возвратомили предлагаемыми опциями, вы можете обратитьсяк нашему консультанту по номеру:",
+      "phone": {
+        "text": "+7 (924) 456 78 90",
+        "href": "tel:+7(924)4567890",
+        "ariaLabel": "Позвонить по номеру телефона"
+      }
+    },
+    "optionsTable": {
+      "heads": [
+        {
+          "name": "Опции",
+          "modyfier": "option"
+        }, {
+          "name": "Зритель",
+          "modyfier": "guest"
+        }, {
+          "name": "Оптиум",
+          "modyfier": "optium"
+        }, {
+          "name": "Vip",
+          "modyfier": "vip"
+        }
+      ],
+      "rows": [
+        {
+          "name": "Пакет гостя форума",
+          "checks": [
+            { 
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }
+          ]
+        }, {
+          "name": "Церемония открытия",
+          "checks": [
+            { 
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }
+          ]
+        }, {
+          "name": "Возможность голосовать",
+          "checks": [
+            { 
+              "isChecked": false
+            }, {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }
+          ]
+        }, {
+          "name": "Доступ за кулисы",
+          "checks": [
+            { 
+              "isChecked": false
+            }, {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }
+          ]
+        }, {
+          "name": "Эксклюзив от кутюрье",
+          "checks": [
+            { 
+              "isChecked": false
+            }, {
+              "isChecked": false
+            }, {
+              "isChecked": true
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "text": null
+        }, {
+          "text": "Купить",
+          "href": "#nowhere"
+        }, {
+          "text": "Купить",
+          "href": "#nowhere"
+        }, {
+          "text": "Купить",
+          "href": "#nowhere"
+        }
+      ]
+    }
+  }
+}

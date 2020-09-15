@@ -1,0 +1,14 @@
+{
+  "pageNav": {
+   "buttons": [
+     {
+       "modifyer": "up",
+       "name": "Предыдущий экран"
+     }, {
+      "modifyer": "up",
+      "name": "Предыдущий экран"
+     }
+   ],
+   "total": "05"
+  }
+}

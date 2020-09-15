@@ -1,0 +1,24 @@
+mixin pageNav(number)
+  .page-nav
+    ul.page-nav__buttons
+      each button in pageNav
+        li
+          button.page-nav__button(class=`page-nav__button--${button.name}` type="button" name=button.name)
+    .page-nav__wrapper
+      span.page-nav__number(class="page-nav__number--active") #{number}/
+      span.page-nav__number #{pageNav.total}
+
+mixin hashtag(text, modifyer)
+  p.hashtag(class=`hashtag--${modifyer}`) #{text}
+
+mixin social(href, modyfier, name)
+  li
+    a.socials__item(href=href class=`socials__item--${modyfier}`) #{name}
+
+mixin sliderControls(customClass, isSmall)
+  if (isSmall)
+    div(class=`${customClass} ${customClass}--small`)
+      div(class=`${customClass}-prev`)
+      div(class=`${customClass}-next`)
+  else 
+    div(class=`${customClass}`)

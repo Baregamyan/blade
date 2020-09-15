@@ -1,0 +1,48 @@
+{
+  "participants": {
+    "number": "02",
+    "title": "Участники",
+    "cards": [
+      {
+        "desc": "Классика, нуар",
+        "photos": [
+          {
+            "src": "https://picsum.photos/448/580",
+            "alt": "Фото 1 «Классика, нуар»",
+            "width": "448",
+            "height": "580"
+          }, {
+            "src": "https://picsum.photos/448/580",
+            "alt": "Фото 2 «Классика, нуар»",
+            "width": "448",
+            "height": "580"
+          }, {
+            "src": "https://picsum.photos/448/580",
+            "alt": "Фото 3 «Классика, нуар»",
+            "width": "448",
+            "height": "580"
+          }
+        ],
+        "author": {
+          "name": "Дэвид<br>Робинсон",
+          "country": "США",
+          "socials": [
+            {
+              "modyfier": "twitter",
+              "href": "#nowhere",
+              "name": "Твиттер"
+            }, {
+              "modyfier": "facebook",
+              "href": "#nowhere",
+              "name": "Фейсбук"
+            }, {
+              "modyfier": "twitter",
+              "href": "#nowhere",
+              "name": "Твиттер"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

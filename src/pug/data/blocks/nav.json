@@ -2,11 +2,19 @@
   "nav": {
     "logo": {
       "src": "/img/logo.png",
-      "alt": "",
-      "width": "",
-      "height": "",
-      "href": "index.html",
-      "name": ""
-    }
+      "alt": "Лого агенства Blade",
+      "width": "10",
+      "height": "10",
+      "href": "index.html"
+    },
+    "langSelect": [
+      {
+        "lang": "РУС",
+        "isSelected": true
+      }, {
+        "lang": "ENG",
+        "isSelected": false
+      }
+    ]
   }
 }

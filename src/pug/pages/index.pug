@@ -1,15 +1,18 @@
-extends ../common/layout.pug
+extends ../common/layout
 
 block vars
   -
     const data = {
       main: true,
-      title: "",
-      description: "",
-      keywords: "",
+      title: "Модельное агенство «Blade» ",
+      description: "Веб-сайт модельного агенства «Blade»",
+      keywords: "Модельное агенство, Blade, blade fashion",
       url: "",
       image: "og-logo"
     }
 
 block content
-  .overlay
+  include ../blocks/about
+  include ../blocks/participants
+  include ../blocks/judges
+  include ../blocks/tickets

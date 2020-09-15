@@ -1,0 +1,33 @@
+section.tickets
+  +pageNav(tickets.number)
+  h2.title.tickets__title #{tickets.title}
+  .tickets__desc
+    p.tickets__text #{tickets.payment.text}
+    ul.tickets__payments
+      each payment in tickets.payment.list
+        li
+          img.tickets__payment-img(src=payment.src alt=payment.alt width=payment.width height=payment.height)
+    .tickets__text #{tickets.contact.text}
+    a.ticket__phone(href=tickets.contact.phone.href aria-label=tickets.contact.phone.ariaLabel) #{tickets.contact.phone.text}
+  table.tickets__options-table.table
+    tr.table__row
+      each head in tickets.optionsTable.heads
+        th.table__head(class=`table__head--${head.modyfier}` scope="col") #{head.name}
+    each row in tickets.optionsTable.rows
+      tr.table__row
+        th.table__cell.table__option-name(scope="row") #{row.name}
+        each check in row.checks
+          td.table__cell.table__option-check(class=check.isChecked ? "table__option-check--checked" : "") #{check.isChecked ? "Включено" : ""}
+    tr.table__row
+      each button in tickets.optionsTable.buttons
+        if button.text
+          td.table__cell
+            a.button.table__link(href=button.href) #{button.text} 
+        else
+          td.table__cell.table__empty &nbsp; 
+
+
+              
+            
+
+

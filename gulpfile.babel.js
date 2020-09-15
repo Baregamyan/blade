@@ -4,6 +4,7 @@ import sass from 'gulp-sass';
 import csscomb from 'gulp-csscomb';
 import csso from 'gulp-csso';
 import pug from 'gulp-pug';
+import htmlValidator from 'gulp-w3c-html-validator';
 import jsonMerge from 'gulp-merge-json';
 import data from 'gulp-data';
 import rename from 'gulp-rename';
@@ -87,6 +88,7 @@ export const mergeJson = () => src(path.json.root)
   .pipe(dest(path.json.save));
 
 export const views = () => src(`${path.views.compile}*.pug`)
+  .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
   .pipe(data((file) => {
     return JSON.parse(
       fs.readFileSync(path.json.compiled)
@@ -96,6 +98,8 @@ export const views = () => src(`${path.views.compile}*.pug`)
     basedir: path.views.root
   }))
   .pipe(dest(path.views.save))
+  .pipe(htmlValidator())
+  .pipe(htmlValidator.reporter())
   .pipe(rename({
     extname: '.php'
   }))

@@ -1,2 +1,32 @@
-section.footer
-  include socials.pug
+footer.footer
+  +pageNav(footer.number)
+  .footer__details
+    h2.footer__title.title #{footer.title}
+    ul.footer__list
+      each item in footer.list
+        li
+          h5.footer__subtitle #{item.subtitle}
+          if item.type === "sales"
+            p.footer__address #{item.address}
+          else if item.type === "connect"
+            a.footer__phone(href=item.phone.href aria-label=item.phone.ariaLabel) #{item.phone.text}
+            br
+            a.footer__email(href=item.email.href aria-label=item.email.ariaLabel) #{item.email.text}
+          else if item.type === "socials"
+            each social in item.list
+              ul
+                +social(social.href, social.modyfier, social.name)
+    .footer__map-wrapper
+      img.footer__map(src=footer.map.img.src width=footer.map.img.height alt=footer.map.img.height)
+  .footer__form-wrapper
+    h2.footer__title.visually-hidden #{footer.form.title}
+    b.footer__lead #{footer.form.lead}
+    form.footer__form(action="submit" name=footer.form.title)
+      each field in footer.form.fields
+        .footer__field-wrapper
+          label.footer__field-label(for=field.id) #{field.label}
+          if !isTextarea
+            input.footer__field-input(id=field.id value=field.value type=field.type name=field.name placeholder=field.placeholder )
+          else
+            textarea.footer__field-input.footer__field-input--message(id=field.name placeholder=field.placeholder value=field.value)
+      button.button.footer__form-button(type="submit")
