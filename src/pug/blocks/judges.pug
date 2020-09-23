@@ -1,14 +1,15 @@
 section.judges
   +pageNav(judges.number)
-  h1.judges__title.title #{judges.title}
+  h2.judges__title.title #{judges.title}
   .swiper-container.judges__cards
     +sliderControls('judges__cards-control')
-    .swiper-wrapper.judges__cards-wrapper
+    ul.swiper-wrapper.judges__cards-wrapper
       each card in judges.cards
-        article.swiper-slide.judges__card
-          img.judges__photo(src=card.photo.src alt=card.photo.alt width=card.photo.width height=card.photo.height)
-          h3.judges__name #{card.name}
-          p.judges__desc #{card.desc}
-          ul.socials.socials--small
-            each social in card.socials
-              +social(social.href, social.modyfier, social.name)
+        li
+          article.swiper-slide.judges__card
+            img.judges__photo(src=card.photo.src alt=card.photo.alt width=card.photo.width height=card.photo.height)
+            h3.judges__name #{card.name}
+            p.judges__desc #{card.desc}
+            ul.socials.socials--small
+              each social in card.socials
+                +social(social.href, social.modyfier, social.name)

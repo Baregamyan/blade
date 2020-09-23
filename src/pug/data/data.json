@@ -2,6 +2,14 @@
 	"about": {
 		"number": "01",
 		"title": "Показ лучших молодых дизайнеров России",
+		"hashtag": {
+			"href": "instagram.com/#bladefashion2019",
+			"text": "#bladefashion2019",
+			"aria": {
+				"label": "Хештег для инстаграма"
+			},
+			"isSmall": "true"
+		},
 		"details": [
 			{
 				"modyfier": "date",
@@ -18,7 +26,7 @@
 			}
 		],
 		"bookButton": {
-			"href": "",
+			"href": "#nowhere",
 			"text": "Бронь билета"
 		},
 		"socials": [
@@ -40,18 +48,65 @@
 		],
 		"photos": [
 			{
-				"src": "https://picsum.photos/787/880",
-				"alt": "",
-				"width": "787",
-				"height": "880"
-			},
-			{
-				"src": "https://picsum.photos/787/880",
-				"alt": "",
+				"src": "images/bfw-show-desktop.png",
+				"alt": "Фотография с BFW шоу 1",
 				"width": "787",
 				"height": "880"
 			}
 		]
+	},
+	"dialog": {
+		"title": {
+			"text": "Форма выбора и заказа билета",
+			"id": "formTitle"
+		},
+		"lead": "Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вамипо вопросу оплаты.",
+		"form": {
+			"name": "ticket-book",
+			"fields": [
+				{
+					"label": "Имя",
+					"id": "clientNameBook",
+					"type": "text",
+					"name": "name",
+					"placeholder": "Введите имя"
+				},
+				{
+					"label": "Email",
+					"id": "clientEmailBook",
+					"type": "email",
+					"name": "email",
+					"placeholder": "Введите e-mail"
+				},
+				{
+					"desc": "Статус билета",
+					"radioes": [
+						{
+							"name": "ticket-status",
+							"value": "guest",
+							"text": "Гость",
+							"isChecked": false
+						},
+						{
+							"name": "ticket-status",
+							"value": "optium",
+							"text": "Оптиум",
+							"isChecked": false
+						},
+						{
+							"name": "ticket-status",
+							"value": "vil",
+							"text": "Вип",
+							"isChecked": true
+						}
+					]
+				}
+			],
+			"button": {
+				"ariaLabel": "Кнопка отправки формы для бронирования билета",
+				"text": "Бронь билета"
+			}
+		}
 	},
 	"footer": {
 		"number": "05",
@@ -135,11 +190,66 @@
 					"placeholder": "Задайте любой вопрос"
 				}
 			],
-			"button": "Отправить"
+			"button": {
+				"text": "Отправить",
+				"ariaLabel": "Отправить вопрос"
+			}
 		}
 	},
-	"hashtag": {
-		"blade": "#bladefashion2019"
+	"header": {
+		"logo": {
+			"viewBox": "0 0 180 42",
+			"id": "logo",
+			"alt": "Лого агенства Blade",
+			"width": "179",
+			"height": "42",
+			"href": "index.html",
+			"aria": {
+				"label": "Перейти в начало сайта"
+			}
+		},
+		"hashtag": {
+			"href": "instagram.com/#bladefashion2019",
+			"text": "#bladefashion2019",
+			"aria": {
+				"label": "Хештег для инстаграма"
+			},
+			"isSmall": "true"
+		},
+		"lang": {
+			"button": {
+				"aria": {
+					"label": "Открыть меню с выбором языка",
+					"pressed": "false",
+					"haspopup": "menu"
+				}
+			},
+			"id": "menuLang",
+			"aria": {
+				"expanded": "false",
+				"hidden": "true"
+			},
+			"list": [
+				{
+					"href": "#nowhere",
+					"isCurrent": true,
+					"id": "ru",
+					"text": "Рус",
+					"aria": {
+						"label": "Русскоязычная версия"
+					}
+				},
+				{
+					"href": "#nowhere",
+					"isCurrent": false,
+					"id": "eng",
+					"text": "Eng",
+					"aria": {
+						"label": "English version"
+					}
+				}
+			]
+		}
 	},
 	"judges": {
 		"number": "03",
@@ -147,7 +257,7 @@
 		"cards": [
 			{
 				"photo": {
-					"src": "https://picsum.photos/454/382",
+					"src": "images/judges-1-desktop.jpg",
 					"alt": "",
 					"width": "454",
 					"height": "382"
@@ -170,7 +280,7 @@
 			},
 			{
 				"photo": {
-					"src": "https://picsum.photos/454/382",
+					"src": "images/judges-2-desktop.jpg",
 					"alt": "",
 					"width": "454",
 					"height": "382"
@@ -198,7 +308,7 @@
 			},
 			{
 				"photo": {
-					"src": "https://picsum.photos/454/382",
+					"src": "images/judges-3-desktop.jpg",
 					"alt": "",
 					"width": "454",
 					"height": "382"
@@ -221,13 +331,15 @@
 			}
 		]
 	},
-	"menu": {
+	"nav": {
+		"aria": {
+			"label": "Главная навигация"
+		},
 		"button": {
 			"aria": {
 				"label": "Конпка открыть меню",
-				"isHaspopup": "true",
-				"isExpanded": "true",
-				"controls": "menu"
+				"haspopup": "true",
+				"expanded": "false"
 			}
 		},
 		"list": [
@@ -253,34 +365,15 @@
 			}
 		]
 	},
-	"nav": {
-		"logo": {
-			"src": "/img/logo.png",
-			"alt": "Лого агенства Blade",
-			"width": "10",
-			"height": "10",
-			"href": "index.html"
-		},
-		"langSelect": [
-			{
-				"lang": "РУС",
-				"isSelected": true
-			},
-			{
-				"lang": "ENG",
-				"isSelected": false
-			}
-		]
-	},
 	"pageNav": {
 		"buttons": [
 			{
 				"modifyer": "up",
-				"name": "Предыдущий экран"
+				"ariaLabel": "Предыдущий экран"
 			},
 			{
 				"modifyer": "up",
-				"name": "Предыдущий экран"
+				"ariaLabel": "Предыдущий экран"
 			}
 		],
 		"total": "05"
@@ -293,27 +386,79 @@
 				"desc": "Классика, нуар",
 				"photos": [
 					{
-						"src": "https://picsum.photos/448/580",
-						"alt": "Фото 1 «Классика, нуар»",
-						"width": "448",
-						"height": "580"
-					},
-					{
-						"src": "https://picsum.photos/448/580",
-						"alt": "Фото 2 «Классика, нуар»",
-						"width": "448",
-						"height": "580"
-					},
-					{
-						"src": "https://picsum.photos/448/580",
-						"alt": "Фото 3 «Классика, нуар»",
+						"src": "images/participants-photo-1-desktop.jpg",
+						"alt": "Фото участников 1 «Классика, нуар»",
 						"width": "448",
 						"height": "580"
 					}
 				],
 				"author": {
-					"name": "Дэвид<br>Робинсон",
+					"name": "Дэвид <br>Робинсон",
 					"country": "США",
+					"socials": [
+						{
+							"modyfier": "twitter",
+							"href": "#nowhere",
+							"name": "Твиттер"
+						},
+						{
+							"modyfier": "facebook",
+							"href": "#nowhere",
+							"name": "Фейсбук"
+						},
+						{
+							"modyfier": "twitter",
+							"href": "#nowhere",
+							"name": "Твиттер"
+						}
+					]
+				}
+			},
+			{
+				"desc": "Авангард, имрессионизм",
+				"photos": [
+					{
+						"src": "images/participants-photo-2-desktop.jpg",
+						"alt": "Фото 1 «Авангард, имрессионизм»",
+						"width": "448",
+						"height": "580"
+					}
+				],
+				"author": {
+					"name": "Келли <br>Макдональд",
+					"country": "США",
+					"socials": [
+						{
+							"modyfier": "twitter",
+							"href": "#nowhere",
+							"name": "Твиттер"
+						},
+						{
+							"modyfier": "facebook",
+							"href": "#nowhere",
+							"name": "Фейсбук"
+						},
+						{
+							"modyfier": "twitter",
+							"href": "#nowhere",
+							"name": "Твиттер"
+						}
+					]
+				}
+			},
+			{
+				"desc": "Эклектика, экотренд",
+				"photos": [
+					{
+						"src": "images/participants-photo-3-desktop.jpg",
+						"alt": "Фото 1 «Эклектика, экотренд»",
+						"width": "448",
+						"height": "580"
+					}
+				],
+				"author": {
+					"name": "Костас <br>Папаниколау",
+					"country": "Греция",
 					"socials": [
 						{
 							"modyfier": "twitter",
@@ -342,25 +487,25 @@
 			"text": "Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций)и произвести оплату онлайн. Мы принимаем оплату:",
 			"list": [
 				{
-					"src": "https://picsum.photos/47/15",
+					"src": "images/Visa.png",
 					"alt": "Карты Виза",
 					"width": "47",
 					"height": "15"
 				},
 				{
-					"src": "https://picsum.photos/47/15",
+					"src": "images/Pay.png",
 					"alt": "Эпл Пей",
 					"width": "47",
 					"height": "15"
 				},
 				{
-					"src": "https://picsum.photos/47/15",
+					"src": "images/MasterCard.png",
 					"alt": "Карты Мастеркарт",
 					"width": "47",
 					"height": "15"
 				},
 				{
-					"src": "https://picsum.photos/47/15",
+					"src": "images/PayPal.png",
 					"alt": "Пейпал",
 					"width": "47",
 					"height": "15"

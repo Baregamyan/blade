@@ -26,7 +26,6 @@ import cheerio from 'gulp-cheerio';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 
-
 /**
  *  Основные директории
  */
@@ -59,8 +58,8 @@ const path = {
     save: `${dirs.dest}/js/`
   },
   images: {
-    root: `${dirs.src}/img/`,
-    save: `${dirs.dest}/img/`
+    root: `${dirs.src}/images/`,
+    save: `${dirs.dest}/images/`
   }
 };
 
@@ -144,7 +143,11 @@ export const devWatch = () => {
 export const sprite = () => {
   return src(`${path.images.root}**/*.svg`)
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-    .pipe(svgmin())
+    .pipe(svgmin({
+      plugins: [{
+        removeTitle: false
+      }]
+    }))
     .pipe(cheerio({
       run: function ($) {
         $('[fill]').removeAttr('fill');
@@ -157,7 +160,7 @@ export const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(dest(`${path.images.root}`))
+    .pipe(dest(`${path.views.root}/common/`))
 };
 
 const fonts = () => {

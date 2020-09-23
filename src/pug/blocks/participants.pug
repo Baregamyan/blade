@@ -3,19 +3,20 @@ section.participants
   h2.title.participants__title #{participants.title}
   .swiper-container.participants__cards
     +sliderControls('participants__cards-controls')
-    .swiper-wrapper.participants__cards-wrapper
+    ul.swiper-wrapper.participants__list
       each card in participants.cards
-        article.participants__card
-          p.participants__desc #{card.desc}
-          .participants__photos.swiper-container
-            +sliderControls('participants__photos-controls', true)
-            .participants__photos-wrapper.swiper-wrapper
-              each photo in card.photos
-                img.participants__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
-            .participants__author-card
-              h4.participants__author-name !{card.author.name}
-              .participants__details
-                span.participants__country #{card.author.country}
-                ul.socials.socials--small
-                  each social in card.author.socials
-                    +social(social.href, social.modyfier, social.name)
+        li
+          article.participants__card
+            p.participants__desc #{card.desc}
+            .participants__photos.swiper-container
+              +sliderControls('participants__photos-controls', true)
+              .participants__photos-wrapper.swiper-wrapper
+                each photo in card.photos
+                  img.participants__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
+              .participants__author-card
+                h3.participants__author-name !{card.author.name}
+                .participants__details
+                  span.participants__country #{card.author.country}
+                  ul.socials.socials--small
+                    each social in card.author.socials
+                      +social(social.href, social.modyfier, social.name)

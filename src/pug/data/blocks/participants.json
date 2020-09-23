@@ -7,25 +7,73 @@
         "desc": "Классика, нуар",
         "photos": [
           {
-            "src": "https://picsum.photos/448/580",
-            "alt": "Фото 1 «Классика, нуар»",
-            "width": "448",
-            "height": "580"
-          }, {
-            "src": "https://picsum.photos/448/580",
-            "alt": "Фото 2 «Классика, нуар»",
-            "width": "448",
-            "height": "580"
-          }, {
-            "src": "https://picsum.photos/448/580",
-            "alt": "Фото 3 «Классика, нуар»",
+            "src": "images/participants-photo-1-desktop.jpg",
+            "alt": "Фото участников 1 «Классика, нуар»",
             "width": "448",
             "height": "580"
           }
         ],
         "author": {
-          "name": "Дэвид<br>Робинсон",
+          "name": "Дэвид <br>Робинсон",
           "country": "США",
+          "socials": [
+            {
+              "modyfier": "twitter",
+              "href": "#nowhere",
+              "name": "Твиттер"
+            }, {
+              "modyfier": "facebook",
+              "href": "#nowhere",
+              "name": "Фейсбук"
+            }, {
+              "modyfier": "twitter",
+              "href": "#nowhere",
+              "name": "Твиттер"
+            }
+          ]
+        }
+      }, {
+        "desc": "Авангард, имрессионизм",
+        "photos": [
+          {
+            "src": "images/participants-photo-2-desktop.jpg",
+            "alt": "Фото 1 «Авангард, имрессионизм»",
+            "width": "448",
+            "height": "580"
+          }
+        ],
+        "author": {
+          "name": "Келли <br>Макдональд",
+          "country": "США",
+          "socials": [
+            {
+              "modyfier": "twitter",
+              "href": "#nowhere",
+              "name": "Твиттер"
+            }, {
+              "modyfier": "facebook",
+              "href": "#nowhere",
+              "name": "Фейсбук"
+            }, {
+              "modyfier": "twitter",
+              "href": "#nowhere",
+              "name": "Твиттер"
+            }
+          ]
+        }
+      }, {
+        "desc": "Эклектика, экотренд",
+        "photos": [
+          {
+            "src": "images/participants-photo-3-desktop.jpg",
+            "alt": "Фото 1 «Эклектика, экотренд»",
+            "width": "448",
+            "height": "580"
+          }
+        ],
+        "author": {
+          "name": "Костас <br>Папаниколау",
+          "country": "Греция",
           "socials": [
             {
               "modyfier": "twitter",

@@ -1,19 +1,31 @@
 {
   "nav": {
-    "logo": {
-      "src": "/img/logo.png",
-      "alt": "Лого агенства Blade",
-      "width": "10",
-      "height": "10",
-      "href": "index.html"
+    "aria": {
+      "label": "Главная навигация"
     },
-    "langSelect": [
+    "button": {
+      "aria": {
+        "label": "Конпка открыть меню",
+        "haspopup": "true",
+        "expanded": "false"
+      }
+    }, 
+    "list": [
       {
-        "lang": "РУС",
-        "isSelected": true
+        "href": "index.html",
+        "name": "Главная"
       }, {
-        "lang": "ENG",
-        "isSelected": false
+        "href": "#participants",
+        "name": "Участники"
+      }, {
+        "href" : "#jury",
+        "name": "Жюри"
+      }, {
+        "href": "#tickets",
+        "name": "Билеты"
+      }, {
+        "href": "#contacts",
+        "name": "Контакты"
       }
     ]
   }

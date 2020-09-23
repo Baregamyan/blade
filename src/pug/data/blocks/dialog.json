@@ -1,0 +1,51 @@
+{
+  "dialog": {
+    "title": {
+      "text": "Форма выбора и заказа билета",
+      "id": "formTitle"
+    },
+    "lead": "Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вамипо вопросу оплаты.",
+    "form": {
+      "name": "ticket-book",
+      "fields": [
+        {
+          "label": "Имя",
+          "id": "clientNameBook",
+          "type": "text",
+          "name": "name",
+          "placeholder": "Введите имя"
+        }, {
+          "label": "Email",
+          "id": "clientEmailBook",
+          "type": "email",
+          "name": "email",
+          "placeholder": "Введите e-mail"
+        }, {
+          "desc": "Статус билета",
+          "radioes": [
+            {
+              "name": "ticket-status",
+              "value": "guest",
+              "text": "Гость",
+              "isChecked": false
+            }, {
+              "name": "ticket-status",
+              "value": "optium",
+              "text": "Оптиум",
+              "isChecked": false
+            }, {
+              "name": "ticket-status",
+              "value": "vil",
+              "text": "Вип",
+              "isChecked": true
+            }
+          ]
+        }
+      ],
+      "button": {
+        "ariaLabel": "Кнопка отправки формы для бронирования билета",
+        "text": "Бронь билета"
+      }
+    }
+  }
+}

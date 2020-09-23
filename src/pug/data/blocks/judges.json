@@ -5,7 +5,7 @@
     "cards": [
       {
         "photo": {
-          "src": "https://picsum.photos/454/382",
+          "src": "images/judges-1-desktop.jpg",
           "alt": "",
           "width": "454",
           "height": "382"
@@ -26,7 +26,7 @@
         ]
       }, {
         "photo": {
-          "src": "https://picsum.photos/454/382",
+          "src": "images/judges-2-desktop.jpg",
           "alt": "",
           "width": "454",
           "height": "382"
@@ -51,7 +51,7 @@
         ]
       }, {
         "photo": {
-          "src": "https://picsum.photos/454/382",
+          "src": "images/judges-3-desktop.jpg",
           "alt": "",
           "width": "454",
           "height": "382"

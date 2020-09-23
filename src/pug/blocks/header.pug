@@ -1,2 +1,11 @@
 header.header
+  a.header__logo(href=data.main ? null : header.logo.href aria-label=header.logo.aria.label)
+    svg.header__logo-img(role="img" viewBox=header.logo.viewBox width=header.logo.width height=header.logo.height)
+      use(xlink:href=`#${header.logo.id}`)
   include ../blocks/nav.pug
+  .header__lang-wrapper
+    button.header__lang-button(type="button" aria-label=header.lang.button.aria.label aria-pressed=header.lang.button.aria.pressed aria-haspopup=header.lang.button.aria.haspopup)
+    menu.header__lang-menu(id=header.lang.id aria-expanded=header.lang.aria.expanded aria-hidden=header.lang.aria.hidden)
+      each lang in header.lang.list
+        li.header__lang-item
+          a.header__lang-link(class=lang.isCurrent ? "header__lang-link--current" : null href=lang.href aria-label=lang.aria.label) #{lang.text}

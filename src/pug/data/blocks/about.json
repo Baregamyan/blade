@@ -2,6 +2,14 @@
   "about": {
     "number": "01",
     "title": "Показ лучших молодых дизайнеров России",
+    "hashtag": {
+      "href": "instagram.com/#bladefashion2019",
+      "text": "#bladefashion2019",
+      "aria": {
+        "label": "Хештег для инстаграма"
+      },
+      "isSmall": "true"
+    },
     "details": [
       {
         "modyfier": "date",
@@ -16,7 +24,7 @@
       }
     ],
     "bookButton": {
-      "href": "",
+      "href": "#nowhere",
       "text": "Бронь билета"
     },
     "socials": [
@@ -36,13 +44,8 @@
     ],
     "photos": [
       {
-        "src": "https://picsum.photos/787/880",
-        "alt": "",
-        "width": "787",
-        "height": "880"
-      }, {
-        "src": "https://picsum.photos/787/880",
-        "alt": "",
+        "src": "images/bfw-show-desktop.png",
+        "alt": "Фотография с BFW шоу 1",
         "width": "787",
         "height": "880"
       }

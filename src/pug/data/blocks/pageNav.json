@@ -3,10 +3,10 @@
    "buttons": [
      {
        "modifyer": "up",
-       "name": "Предыдущий экран"
+       "ariaLabel": "Предыдущий экран"
      }, {
       "modifyer": "up",
-      "name": "Предыдущий экран"
+      "ariaLabel": "Предыдущий экран"
      }
    ],
    "total": "05"

@@ -1,0 +1,56 @@
+{
+  "header": {
+    "logo": {
+      "viewBox": "0 0 180 42",
+      "id": "logo",
+      "alt": "Лого агенства Blade",
+      "width": "179",
+      "height": "42",
+      "href": "index.html",
+      "aria": {
+        "label": "Перейти в начало сайта"
+      }
+    },
+    "hashtag": {
+      "href": "instagram.com/#bladefashion2019",
+      "text": "#bladefashion2019",
+      "aria": {
+        "label": "Хештег для инстаграма"
+      },
+      "isSmall": "true"
+    },
+    "lang": {
+      "button": {
+        "aria": {
+          "label": "Открыть меню с выбором языка",
+          "pressed": "false",
+          "haspopup": "menu"
+        }
+      },
+      "id": "menuLang",
+      "aria": {
+        "expanded": "false",
+        "hidden": "true"
+      },
+      "list": [
+        {
+          "href": "#nowhere",
+          "isCurrent": true,
+          "id": "ru",
+          "text": "Рус",
+          "aria": {
+            "label": "Русскоязычная версия"
+          }
+        }, {
+          "href": "#nowhere",
+          "isCurrent": false,
+          "id": "eng",
+          "text":"Eng",
+          "aria": {
+            "label": "English version"
+          }
+        }
+      ]
+    }
+  }
+}
