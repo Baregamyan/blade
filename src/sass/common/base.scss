@@ -1,33 +1,21 @@
 body {
-  font: $font-size/$line-height $font-family;
+  font-family: $font-family;
+  font-weight: normal;
   color: $color-base;
   background-color: $color-bg;
   letter-spacing: $letter-spacing;
 
-  min-width: $width-xs;
+  min-width: $width-mobile;
 
-  @media #{$media-sm} {
-    min-width: $width-sm;
+  @media #{$media-tablet} {
+    min-width: $width-tablet;
   }
-  @media #{$media-md} {
-    min-width: $width-md;
-  }
-  @media #{$media-lg} {
-    min-width: $width-lg;
-  }
-  @media #{$media-xl} {
-    min-width: $width-xl;
+  @media #{$media-desktop} {
+    min-width: $width-desktop;
   }
 }
 
 a {
   background-color: transparent;
-  &:hover,
-  &:focus {
-    color: $color-hover;
-    text-decoration: none;
-  }
-  &:active {
-    color: $color-active;
-  }
+  text-decoration: none;
 }

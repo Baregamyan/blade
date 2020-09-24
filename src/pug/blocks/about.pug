@@ -1,21 +1,22 @@
 section.about
-  +pageNav(about.number)
-  .about__desc
-    +hashtag(about.hashtag)
-    h1.about__title.title #{about.title}
-    ul.about__details
-      each detail in about.details
-        li
-          if detail.datetime
-            time.about__detail(class=`about__detail--${detail.modyfier}` datetime=detail.datetime) !{detail.text}
-          else
-            p.about__detail(class=`about__detail--${detail.modyfier}`) !{detail.text}
-    a.about__button.button.button--book(href=about.bookButton.href role="button" aria-pressed="false") #{about.bookButton.text}
-    ul.socials
-      each social in about.socials
-        +social(social.href, social.modifyer, social.name)
-  .swiper-slider.about__photos
-    +sliderControls('about__photos-controls', true)
-    .swiper-wrapper.about__photos-wrapper
-      each photo in about.photos
-        img.swiper-slide.about__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
+  .about__wrapper
+    +pageNav(about.number)
+    .about__desc
+      +hashtag(about.hashtag)
+      h1.about__title.title #{about.title}
+      ul.about__details
+        each detail in about.details
+          li
+            if detail.datetime
+              time.about__detail(class=`about__detail--${detail.modyfier}` datetime=detail.datetime) !{detail.text}
+            else
+              p.about__detail(class=`about__detail--${detail.modyfier}`) !{detail.text}
+      a.about__button.button.button--book(href=about.bookButton.href role="button" aria-pressed="false") #{about.bookButton.text}
+      ul.socials
+        each social in about.socials
+          +social(social.href, social.modifyer, social.name)
+    .swiper-slider.about__photos
+      +sliderControls('about__photos-controls', true)
+      .swiper-wrapper.about__photos-wrapper
+        each photo in about.photos
+          img.swiper-slide.about__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)

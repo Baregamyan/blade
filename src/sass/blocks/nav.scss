@@ -1,0 +1,5 @@
+.nav__item {
+  font-family: $font-family-title;
+  font-weight: bold;
+  @include title;
+}

@@ -1,0 +1,19 @@
+.header__logo {
+  display: block;
+  padding: 26px 13px;
+  
+  background-color: $color-bg;
+
+  @media #{$media-tablet} {
+    padding: 33px 17px;
+  }
+
+  @media #{$media-desktop} {
+    padding: 51px 40px;
+  }
+}
+
+.header__lang {
+  font-size: 16px;
+  font-weight: $font-weight-semibold;
+}

@@ -1,0 +1,17 @@
+.judges__title { 
+  font-size: $font-size-big-mobile;
+  line-height: $line-height-big;
+  @media #{$media-tablet} {
+    font-size: $font-size-big-tablet;
+  }
+}
+
+.judges__country {
+  @include weakText;
+}
+
+.judges__desc {
+  opacity: 0.6;
+  color: $color-base;
+  line-height: 1.4;
+}

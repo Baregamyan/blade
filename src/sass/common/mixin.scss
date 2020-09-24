@@ -9,3 +9,37 @@
     max-width: $width-xl;
   }
 }
+
+@mixin title {
+  font-family: $font-family-title;
+  font-size: $font-size-huge-mobile;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-title;
+  opacity: 0.9;
+  @media #{$media-tablet} {
+    font-size: $font-size-huge-tablet;
+    font-weight: $font-weight-black;
+  }
+  @media #{$media-desktop} {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight-bold
+  }
+}
+
+@mixin weakText {
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 2px;
+  opacity: 0.3;
+
+  text-transform: uppercase;
+}
+
+@mixin input {
+  &::placeholder {
+    font-size: $font-size;
+    opacity: 0.5;
+    line-height: 1.5;
+  }
+}

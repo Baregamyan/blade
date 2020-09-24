@@ -1,0 +1,30 @@
+.footer__subtitle {
+  @include weakText;
+}
+
+.footer__phone {
+  color: $color-base;
+}
+
+.footer__email {
+  color: $color-base;
+}
+
+.footer__lead {
+  font-size: 24px;
+  font-weight: $font-weight-regular;
+  @media #{$media-tablet} {
+    font-size: 32px;
+  }
+  @media #{$media-desktop} {
+    font-size: $font-size-big-desktop;
+  }
+}
+
+.form__field-label {
+  @include weakText;
+}
+
+.form__field-input {
+  @include input;
+}

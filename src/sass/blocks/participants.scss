@@ -1,0 +1,15 @@
+.participants__desc {
+  @include weakText;
+}
+
+.participants__author-name {
+  font-size: $font-size-medium-mobile;
+  line-height: $line-height-medium;
+  @media #{$media-tablet} {
+    font-size: $font-size-medium-tablet;
+  }
+}
+
+.participants__country {
+  @include weakText;
+}

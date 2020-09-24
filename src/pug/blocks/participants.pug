@@ -14,9 +14,9 @@ section.participants
                 each photo in card.photos
                   img.participants__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
               .participants__author-card
-                h3.participants__author-name !{card.author.name}
+                h3.title.participants__author-name !{card.author.name}
                 .participants__details
-                  span.participants__country #{card.author.country}
+                  p.participants__country #{card.author.country}
                   ul.socials.socials--small
                     each social in card.author.socials
                       +social(social.href, social.modyfier, social.name)

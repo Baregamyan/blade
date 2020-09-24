@@ -1,0 +1,12 @@
+.about {
+  background-color: $color-secondary;
+}
+
+.about__hashtag {
+  font-size: 18px;
+  color: $color-primary;
+
+  @media #{$media-tablet} {
+    font-size: 24px;
+  }
+}
