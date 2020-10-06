@@ -1,0 +1,13 @@
+.page {
+ 
+  &--menu-opened {
+    overflow: hidden;
+    height: 100vh;
+    & .nav {
+      transform: translateX(0);
+    }
+    & .header__lang-adaptive {
+      display: flex;
+    }
+  }
+}

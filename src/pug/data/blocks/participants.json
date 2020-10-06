@@ -16,17 +16,29 @@
         "author": {
           "name": "Дэвид <br>Робинсон",
           "country": "США",
+          "avatar": {
+            "src": "images/avatar.png",
+            "alt": "Аватар Дэвида Робинсона",
+            "width": "48",
+            "height": "48"
+          },
           "socials": [
             {
-              "modyfier": "twitter",
+              "id": "instagram",
+              "viewBox": "0 0 34 35",
+              "height": "18",
               "href": "#nowhere",
-              "name": "Твиттер"
+              "name": "Инстаграм"
             }, {
-              "modyfier": "facebook",
+              "id": "facebook",
+              "viewBox": "0 0 18 35",
+              "height": "18",
               "href": "#nowhere",
               "name": "Фейсбук"
             }, {
-              "modyfier": "twitter",
+              "id": "twitter",
+              "viewBox": "0 0 35 29",
+              "height": "18",
               "href": "#nowhere",
               "name": "Твиттер"
             }
@@ -45,17 +57,29 @@
         "author": {
           "name": "Келли <br>Макдональд",
           "country": "США",
+          "avatar": {
+            "src": "images/avatar.png",
+            "alt": "Аватар Дэвида Робинсона",
+            "width": "48",
+            "height": "48"
+          },
           "socials": [
             {
-              "modyfier": "twitter",
+              "id": "instagram",
+              "viewBox": "0 0 34 35",
+              "height": "18",
               "href": "#nowhere",
-              "name": "Твиттер"
+              "name": "Инстаграм"
             }, {
-              "modyfier": "facebook",
+              "id": "facebook",
+              "viewBox": "0 0 18 35",
+              "height": "18",
               "href": "#nowhere",
               "name": "Фейсбук"
             }, {
-              "modyfier": "twitter",
+              "id": "twitter",
+              "viewBox": "0 0 35 29",
+              "height": "18",
               "href": "#nowhere",
               "name": "Твиттер"
             }
@@ -74,21 +98,52 @@
         "author": {
           "name": "Костас <br>Папаниколау",
           "country": "Греция",
+          "avatar": {
+            "src": "images/avatar.png",
+            "alt": "Аватар Дэвида Робинсона",
+            "width": "48",
+            "height": "48"
+          },
           "socials": [
             {
-              "modyfier": "twitter",
+              "id": "instagram",
+              "viewBox": "0 0 34 35",
+              "height": "18",
               "href": "#nowhere",
-              "name": "Твиттер"
+              "name": "Инстаграм"
             }, {
-              "modyfier": "facebook",
+              "id": "facebook",
+              "viewBox": "0 0 18 35",
+              "height": "18",
               "href": "#nowhere",
               "name": "Фейсбук"
             }, {
-              "modyfier": "twitter",
+              "id": "twitter",
+              "viewBox": "0 0 35 29",
+              "height": "18",
               "href": "#nowhere",
               "name": "Твиттер"
             }
           ]
+        }
+      }
+    ],
+    "controls": [
+      {
+        "modifyer": "prev",
+        "svg": {
+          "id": "back",
+          "width": "32",
+          "height": "64",
+          "viewBox": "0 0 477.175 477.175"
+        }
+      }, {
+        "modifyer": "next",
+        "svg": {
+          "id": "back",
+          "width": "32",
+          "height": "64",
+          "viewBox": "0 0 477.175 477.175"
         }
       }
     ]

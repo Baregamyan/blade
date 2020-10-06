@@ -25,15 +25,21 @@
         "type": "socials",
         "list": [
           {
-            "modyfier": "facebook",
+            "id": "facebook",
+            "viewBox": "0 0 18 35",
+            "height": "19",
             "href": "#nowhere",
             "name": "Фейсбук"
           }, {
-            "modyfier": "instagram",
+            "id": "instagram",
+            "viewBox": "0 0 34 35",
+            "height": "19",
             "href": "#nowhere",
             "name": "Инстаграм"
           }, {
-            "modyfier": "twitter",
+            "id": "twitter",
+            "viewBox": "0 0 35 29",
+            "height": "19",
             "href": "#nowhere",
             "name": "Твиттер"
           }
@@ -47,6 +53,10 @@
         "height": "462",
         "alt": "Наше местоположение на карте"
       }
+    },
+    "link": {
+      "href": "#nowhere",
+      "text": "Задать вопрос"
     },
     "form": {
       "title": "Форма обратной связи",

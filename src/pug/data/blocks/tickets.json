@@ -13,18 +13,18 @@
         }, {
           "src": "images/Pay.png",
           "alt": "Эпл Пей",
-          "width": "47",
-          "height": "15"
+          "width": "44",
+          "height": "21"
         }, {
           "src": "images/MasterCard.png",
           "alt": "Карты Мастеркарт",
-          "width": "47",
-          "height": "15"
+          "width": "35",
+          "height": "27"
         }, {
           "src": "images/PayPal.png",
           "alt": "Пейпал",
-          "width": "47",
-          "height": "15"
+          "width": "59",
+          "height": "14"
         }
       ]
     },
@@ -40,16 +40,44 @@
       "heads": [
         {
           "name": "Опции",
-          "modyfier": "option"
+          "modyfier": "option",
+          "stars": []
         }, {
           "name": "Зритель",
-          "modyfier": "guest"
+          "modyfier": "guest",
+          "stars": [
+            {
+              "isChecked": true
+            }, {
+              "isChecked": false
+            }, {
+              "isChecked": false
+            }
+          ]
         }, {
           "name": "Оптиум",
-          "modyfier": "optium"
+          "modyfier": "optium",
+          "stars": [
+            {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }, {
+              "isChecked": false
+            }
+          ]
         }, {
           "name": "Vip",
-          "modyfier": "vip"
+          "modyfier": "vip",
+          "stars": [
+            {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }, {
+              "isChecked": true
+            }
+          ]
         }
       ],
       "rows": [

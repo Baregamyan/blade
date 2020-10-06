@@ -104,14 +104,14 @@ export const views = () => src(`${path.views.compile}*.pug`)
   }))
   .pipe(dest(path.views.save));
 
-export const scripts = () => src(`${path.scripts.root}`)
+export const scripts = () => src(`${path.scripts.root}/index.js`)
   .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
   .pipe(rollup({
     plugins: [
-      babel({presets: ['@babel/preset-env']}),
+      // babel({presets: ['@babel/preset-env']}),
       resolve({vmodule: true }),
       commonjs(),
-      terser()
+      // terser()
     ]
   }, 'umd'))
   .pipe(dest(path.scripts.save))

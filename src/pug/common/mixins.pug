@@ -11,11 +11,8 @@ mixin pageNav(number)
 mixin hashtag(params)
   a.hashtag(class=params.isSmall ? "hashtag--small" : null href=params.href aria-label=params.ariaLabel) #{params.text}
 
-mixin social(href, modyfier, name)
+mixin social(params)
   li
-    a.socials__item(href=href class=`socials__item--${modyfier}`) #{name}
-
-mixin sliderControls(customClass, isSmall)
-  div(class=customClass ? `${customClass}--small` : customClass)
-    button(class=`${customClass}-prev` type="button" aria-label="Показать предыдущий слайд")
-    button(class=`${customClass}-next` type="button" aria-label="Показать следующий слайд")
+    a.socials__item(href=params.href aria-label=params.name)
+      svg.socials__svg(viewBox=params.viewBox height=params.height)
+        use(xlink:href=`#${params.id}`)

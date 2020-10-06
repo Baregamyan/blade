@@ -2,21 +2,33 @@ section.participants
   +pageNav(participants.number)
   h2.title.participants__title #{participants.title}
   .swiper-container.participants__cards
-    +sliderControls('participants__cards-controls')
     ul.swiper-wrapper.participants__list
       each card in participants.cards
-        li
+        li.swiper-slide.participants__slide
           article.participants__card
             p.participants__desc #{card.desc}
             .participants__photos.swiper-container
-              +sliderControls('participants__photos-controls', true)
               .participants__photos-wrapper.swiper-wrapper
                 each photo in card.photos
                   img.participants__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
               .participants__author-card
-                h3.title.participants__author-name !{card.author.name}
-                .participants__details
-                  p.participants__country #{card.author.country}
-                  ul.socials.socials--small
-                    each social in card.author.socials
-                      +social(social.href, social.modyfier, social.name)
+                img.participants__avatar(src=card.author.avatar.src alt=card.author.avatar.alt width=card.author.avatar.width height=card.author.avatar.height)
+                .participants__author-card-wrapper
+                  h3.title.participants__author-name !{card.author.name}
+                  .participants__details
+                    p.participants__country #{card.author.country}
+                    ul.socials.socials--small.participants__socials
+                      each social in card.author.socials
+                        +social(social)
+            .participants__controls.participants__controls--photos
+              each control in participants.controls
+                button.swiper-button-prev.participants__control(class=`participants__control--${control.modifyer} participants__control--photos-${control.modifyer}` type="button")
+                  svg.participants__svg(viewBox=control.svg.viewBox width=control.svg.width height=control.svg.height)
+                    use(xlink:href=`#${control.svg.id}`)
+    .participants__pagination.pagination
+  .participants__controls.participants__controls--cards
+    each control in participants.controls
+      button.swiper-button-prev.participants__control(class=`participants__control--${control.modifyer} participants__control--main-${control.modifyer}` type="button")
+        svg.participants__svg(viewBox=control.svg.viewBox width=control.svg.width height=control.svg.height)
+          use(xlink:href=`#${control.svg.id}`)
+  

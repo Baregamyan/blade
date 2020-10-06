@@ -37,6 +37,8 @@ $color-bold: #1C1515;
 $color-bg: #FFF;
 $color-primary: #F2C03F;
 $color-secondary: #7C6AAD;
+$color-secondary-darker: #654EA3;
+$color-bg-secondary: #F4F4F4;
 
 /* Размеры */
 $width-mobile: 320px;
@@ -51,3 +53,6 @@ $media-desktop: screen and (min-width: $width-desktop);
 $gap: 16px;
 $gap-tablet: 40px;
 $gap-desktop: 40px;
+
+$transition: 0.3s ease;
+$gradient: linear-gradient(137deg, rgba(101, 78, 163, 0.87) 35.26%, rgba(95, 75, 139, 0.87) 88.11%)

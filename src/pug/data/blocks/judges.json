@@ -10,16 +10,20 @@
           "width": "454",
           "height": "382"
         },
-        "name": "Давис<br>Бертанс",
+        "name": "Давис Бертанс",
         "country": "Литва",
         "desc": "Владелец модного дома в Литве.Судья показов young blood Vilnus.",
         "socials": [
           {
-            "modyfier": "facebook",
+            "id": "facebook",
+            "viewBox": "0 0 18 35",
+            "height": "33",
             "href": "#nowhere",
             "name": "Фейсбук"
           }, {
-            "modyfier": "twitter",
+            "id": "twitter",
+            "viewBox": "0 0 35 29",
+            "height": "33",
             "href": "#nowhere",
             "name": "Твиттер"
           }
@@ -31,20 +35,20 @@
           "width": "454",
           "height": "382"
         },
-        "name": "Георгий<br>Рубильников",
+        "name": "Георгий Рубильников",
         "country": "Россия",
         "desc": "Дизайнер, работающий с Gucci, владелец салона в Санкт-Петербурге.",
         "socials": [
           {
-            "modyfier": "instagram",
-            "href": "#nowhere",
-            "name": "Инстаграм"
-          }, {
-            "modyfier": "facebook",
+            "id": "facebook",
+            "viewBox": "0 0 18 35",
+            "height": "33",
             "href": "#nowhere",
             "name": "Фейсбук"
           }, {
-            "modyfier": "twitter",
+            "id": "twitter",
+            "viewBox": "0 0 35 29",
+            "height": "33",
             "href": "#nowhere",
             "name": "Твиттер"
           }
@@ -56,18 +60,22 @@
           "width": "454",
           "height": "382"
         },
-        "name": "Давид<br>Гегенешвили",
+        "name": "Давид Гегенешвили",
         "country": "Грузия",
         "desc": "Создатель Georgia Runway Project. Главный судья на young blood Moscow.",
         "socials": [
           {
-            "modyfier": "instagram",
-            "href": "#nowhere",
-            "name": "Инстаграм"
-          }, {
-            "modyfier": "facebook",
+            "id": "facebook",
+            "viewBox": "0 0 18 35",
+            "height": "33",
             "href": "#nowhere",
             "name": "Фейсбук"
+          }, {
+            "id": "twitter",
+            "viewBox": "0 0 35 29",
+            "height": "33",
+            "href": "#nowhere",
+            "name": "Твиттер"
           }
         ]
       }

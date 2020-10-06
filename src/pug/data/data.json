@@ -12,16 +12,31 @@
 		},
 		"details": [
 			{
-				"modyfier": "date",
+				"icon": {
+					"id": "calendar",
+					"width": "36",
+					"height": "36",
+					"viewBox": "0 0 37 35"
+				},
 				"text": "18 ноября<br>12<sup>30</sup> — 20<sup>00</sup>",
 				"datetime": "2019-11-18T12:30"
 			},
 			{
-				"modyfier": "location",
+				"icon": {
+					"id": "location",
+					"width": "36",
+					"height": "36",
+					"viewBox": "0 0 28 35"
+				},
 				"text": "Москва<br>Лофт-цент «Эдем»"
 			},
 			{
-				"modyfier": "aword",
+				"icon": {
+					"id": "winner",
+					"width": "36",
+					"height": "36",
+					"viewBox": "0 0 40 37"
+				},
 				"text": "Победитель едет<br>на показ Blade в Париж!"
 			}
 		],
@@ -31,17 +46,23 @@
 		},
 		"socials": [
 			{
-				"modyfier": "facebook",
+				"id": "facebook",
+				"viewBox": "0 0 18 35",
+				"height": "33",
 				"href": "#nowhere",
 				"name": "Фейсбук"
 			},
 			{
-				"modyfier": "instagram",
+				"id": "instagram",
+				"viewBox": "0 0 34 35",
+				"height": "33",
 				"href": "#nowhere",
 				"name": "Инстаграм"
 			},
 			{
-				"modyfier": "twitter",
+				"id": "twitter",
+				"viewBox": "0 0 35 29",
+				"height": "33",
 				"href": "#nowhere",
 				"name": "Твиттер"
 			}
@@ -52,6 +73,26 @@
 				"alt": "Фотография с BFW шоу 1",
 				"width": "787",
 				"height": "880"
+			}
+		],
+		"controls": [
+			{
+				"modify": "prev",
+				"svg": {
+					"id": "#back",
+					"width": "30",
+					"height": "40",
+					"viewBox": "0 0 477.175 477.175"
+				}
+			},
+			{
+				"modify": "next",
+				"svg": {
+					"id": "#back",
+					"width": "30",
+					"height": "40",
+					"viewBox": "0 0 477.175 477.175"
+				}
 			}
 		]
 	},
@@ -136,17 +177,23 @@
 				"type": "socials",
 				"list": [
 					{
-						"modyfier": "facebook",
+						"id": "facebook",
+						"viewBox": "0 0 18 35",
+						"height": "19",
 						"href": "#nowhere",
 						"name": "Фейсбук"
 					},
 					{
-						"modyfier": "instagram",
+						"id": "instagram",
+						"viewBox": "0 0 34 35",
+						"height": "19",
 						"href": "#nowhere",
 						"name": "Инстаграм"
 					},
 					{
-						"modyfier": "twitter",
+						"id": "twitter",
+						"viewBox": "0 0 35 29",
+						"height": "19",
 						"href": "#nowhere",
 						"name": "Твиттер"
 					}
@@ -160,6 +207,10 @@
 				"height": "462",
 				"alt": "Наше местоположение на карте"
 			}
+		},
+		"link": {
+			"href": "#nowhere",
+			"text": "Задать вопрос"
 		},
 		"form": {
 			"title": "Форма обратной связи",
@@ -249,6 +300,13 @@
 					}
 				}
 			]
+		},
+		"burger": {
+			"aria": {
+				"label": "Открыть меню навигации",
+				"pressed": "true",
+				"haspopup": "true"
+			}
 		}
 	},
 	"judges": {
@@ -262,17 +320,21 @@
 					"width": "454",
 					"height": "382"
 				},
-				"name": "Давис<br>Бертанс",
+				"name": "Давис Бертанс",
 				"country": "Литва",
 				"desc": "Владелец модного дома в Литве.Судья показов young blood Vilnus.",
 				"socials": [
 					{
-						"modyfier": "facebook",
+						"id": "facebook",
+						"viewBox": "0 0 18 35",
+						"height": "33",
 						"href": "#nowhere",
 						"name": "Фейсбук"
 					},
 					{
-						"modyfier": "twitter",
+						"id": "twitter",
+						"viewBox": "0 0 35 29",
+						"height": "33",
 						"href": "#nowhere",
 						"name": "Твиттер"
 					}
@@ -285,22 +347,21 @@
 					"width": "454",
 					"height": "382"
 				},
-				"name": "Георгий<br>Рубильников",
+				"name": "Георгий Рубильников",
 				"country": "Россия",
 				"desc": "Дизайнер, работающий с Gucci, владелец салона в Санкт-Петербурге.",
 				"socials": [
 					{
-						"modyfier": "instagram",
-						"href": "#nowhere",
-						"name": "Инстаграм"
-					},
-					{
-						"modyfier": "facebook",
+						"id": "facebook",
+						"viewBox": "0 0 18 35",
+						"height": "33",
 						"href": "#nowhere",
 						"name": "Фейсбук"
 					},
 					{
-						"modyfier": "twitter",
+						"id": "twitter",
+						"viewBox": "0 0 35 29",
+						"height": "33",
 						"href": "#nowhere",
 						"name": "Твиттер"
 					}
@@ -313,19 +374,23 @@
 					"width": "454",
 					"height": "382"
 				},
-				"name": "Давид<br>Гегенешвили",
+				"name": "Давид Гегенешвили",
 				"country": "Грузия",
 				"desc": "Создатель Georgia Runway Project. Главный судья на young blood Moscow.",
 				"socials": [
 					{
-						"modyfier": "instagram",
-						"href": "#nowhere",
-						"name": "Инстаграм"
-					},
-					{
-						"modyfier": "facebook",
+						"id": "facebook",
+						"viewBox": "0 0 18 35",
+						"height": "33",
 						"href": "#nowhere",
 						"name": "Фейсбук"
+					},
+					{
+						"id": "twitter",
+						"viewBox": "0 0 35 29",
+						"height": "33",
+						"href": "#nowhere",
+						"name": "Твиттер"
 					}
 				]
 			}
@@ -395,19 +460,31 @@
 				"author": {
 					"name": "Дэвид <br>Робинсон",
 					"country": "США",
+					"avatar": {
+						"src": "images/avatar.png",
+						"alt": "Аватар Дэвида Робинсона",
+						"width": "48",
+						"height": "48"
+					},
 					"socials": [
 						{
-							"modyfier": "twitter",
+							"id": "instagram",
+							"viewBox": "0 0 34 35",
+							"height": "18",
 							"href": "#nowhere",
-							"name": "Твиттер"
+							"name": "Инстаграм"
 						},
 						{
-							"modyfier": "facebook",
+							"id": "facebook",
+							"viewBox": "0 0 18 35",
+							"height": "18",
 							"href": "#nowhere",
 							"name": "Фейсбук"
 						},
 						{
-							"modyfier": "twitter",
+							"id": "twitter",
+							"viewBox": "0 0 35 29",
+							"height": "18",
 							"href": "#nowhere",
 							"name": "Твиттер"
 						}
@@ -427,19 +504,31 @@
 				"author": {
 					"name": "Келли <br>Макдональд",
 					"country": "США",
+					"avatar": {
+						"src": "images/avatar.png",
+						"alt": "Аватар Дэвида Робинсона",
+						"width": "48",
+						"height": "48"
+					},
 					"socials": [
 						{
-							"modyfier": "twitter",
+							"id": "instagram",
+							"viewBox": "0 0 34 35",
+							"height": "18",
 							"href": "#nowhere",
-							"name": "Твиттер"
+							"name": "Инстаграм"
 						},
 						{
-							"modyfier": "facebook",
+							"id": "facebook",
+							"viewBox": "0 0 18 35",
+							"height": "18",
 							"href": "#nowhere",
 							"name": "Фейсбук"
 						},
 						{
-							"modyfier": "twitter",
+							"id": "twitter",
+							"viewBox": "0 0 35 29",
+							"height": "18",
 							"href": "#nowhere",
 							"name": "Твиттер"
 						}
@@ -459,23 +548,55 @@
 				"author": {
 					"name": "Костас <br>Папаниколау",
 					"country": "Греция",
+					"avatar": {
+						"src": "images/avatar.png",
+						"alt": "Аватар Дэвида Робинсона",
+						"width": "48",
+						"height": "48"
+					},
 					"socials": [
 						{
-							"modyfier": "twitter",
+							"id": "instagram",
+							"viewBox": "0 0 34 35",
+							"height": "18",
 							"href": "#nowhere",
-							"name": "Твиттер"
+							"name": "Инстаграм"
 						},
 						{
-							"modyfier": "facebook",
+							"id": "facebook",
+							"viewBox": "0 0 18 35",
+							"height": "18",
 							"href": "#nowhere",
 							"name": "Фейсбук"
 						},
 						{
-							"modyfier": "twitter",
+							"id": "twitter",
+							"viewBox": "0 0 35 29",
+							"height": "18",
 							"href": "#nowhere",
 							"name": "Твиттер"
 						}
 					]
+				}
+			}
+		],
+		"controls": [
+			{
+				"modifyer": "prev",
+				"svg": {
+					"id": "back",
+					"width": "32",
+					"height": "64",
+					"viewBox": "0 0 477.175 477.175"
+				}
+			},
+			{
+				"modifyer": "next",
+				"svg": {
+					"id": "back",
+					"width": "32",
+					"height": "64",
+					"viewBox": "0 0 477.175 477.175"
 				}
 			}
 		]
@@ -495,20 +616,20 @@
 				{
 					"src": "images/Pay.png",
 					"alt": "Эпл Пей",
-					"width": "47",
-					"height": "15"
+					"width": "44",
+					"height": "21"
 				},
 				{
 					"src": "images/MasterCard.png",
 					"alt": "Карты Мастеркарт",
-					"width": "47",
-					"height": "15"
+					"width": "35",
+					"height": "27"
 				},
 				{
 					"src": "images/PayPal.png",
 					"alt": "Пейпал",
-					"width": "47",
-					"height": "15"
+					"width": "59",
+					"height": "14"
 				}
 			]
 		},
@@ -524,19 +645,53 @@
 			"heads": [
 				{
 					"name": "Опции",
-					"modyfier": "option"
+					"modyfier": "option",
+					"stars": []
 				},
 				{
 					"name": "Зритель",
-					"modyfier": "guest"
+					"modyfier": "guest",
+					"stars": [
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": false
+						},
+						{
+							"isChecked": false
+						}
+					]
 				},
 				{
 					"name": "Оптиум",
-					"modyfier": "optium"
+					"modyfier": "optium",
+					"stars": [
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": false
+						}
+					]
 				},
 				{
 					"name": "Vip",
-					"modyfier": "vip"
+					"modyfier": "vip",
+					"stars": [
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						},
+						{
+							"isChecked": true
+						}
+					]
 				}
 			],
 			"rows": [

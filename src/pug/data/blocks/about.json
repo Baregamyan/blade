@@ -12,14 +12,29 @@
     },
     "details": [
       {
-        "modyfier": "date",
+        "icon": {
+          "id": "calendar",
+          "width": "36",
+          "height": "36",
+          "viewBox": "0 0 37 35"
+        },
         "text": "18 ноября<br>12<sup>30</sup> — 20<sup>00</sup>",
         "datetime": "2019-11-18T12:30"
       }, {
-        "modyfier": "location",
+        "icon": {
+          "id": "location",
+          "width": "36",
+          "height": "36",
+          "viewBox": "0 0 28 35"
+        },
         "text": "Москва<br>Лофт-цент «Эдем»"
       }, {
-        "modyfier": "aword",
+        "icon": {
+          "id": "winner",
+          "width": "36",
+          "height": "36",
+          "viewBox": "0 0 40 37"
+        },
         "text": "Победитель едет<br>на показ Blade в Париж!"
       }
     ],
@@ -29,15 +44,21 @@
     },
     "socials": [
       {
-        "modyfier": "facebook",
+        "id": "facebook",
+        "viewBox": "0 0 18 35",
+        "height": "33",
         "href": "#nowhere",
         "name": "Фейсбук"
       }, {
-        "modyfier": "instagram",
+        "id": "instagram",
+        "viewBox": "0 0 34 35",
+        "height": "33",
         "href": "#nowhere",
         "name": "Инстаграм"
       }, {
-        "modyfier": "twitter",
+        "id": "twitter",
+        "viewBox": "0 0 35 29",
+        "height": "33",
         "href": "#nowhere",
         "name": "Твиттер"
       }
@@ -49,6 +70,25 @@
         "width": "787",
         "height": "880"
       }
-    ] 
+    ],
+    "controls": [
+      {
+        "modify": "prev",
+        "svg": {
+          "id": "#back",
+          "width": "30",
+          "height": "40",
+          "viewBox": "0 0 477.175 477.175"
+        }
+      }, {
+        "modify": "next",
+        "svg": {
+          "id": "#back",
+          "width": "30",
+          "height": "40",
+          "viewBox": "0 0 477.175 477.175"
+        }
+      }
+    ]
   }
 }
