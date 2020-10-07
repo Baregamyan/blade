@@ -170,7 +170,7 @@ const fonts = () => {
 };
 
 export const ghDeploy = () => {
-  ghpages.publish(dirs.dest)
+  return ghpages.publish(dirs.dest);
 }
 
 export const json = series(deleteJson, mergeJson);

@@ -146,12 +146,12 @@
     width: 16px;
     height: 16px;
 
-    background-image: url('/images/star.png');
+    background-image: url('images/star.png');
     background-repeat: no-repeat;
   }
   &--checked {
     &::before {
-      background-image: url('/images/star-checked.png');
+      background-image: url('images/star-checked.png');
     }
   }
 }
