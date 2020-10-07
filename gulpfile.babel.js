@@ -25,6 +25,7 @@ import svgmin from 'gulp-svgmin';
 import cheerio from 'gulp-cheerio';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
+import ghpages from 'gh-pages';
 
 /**
  *  Основные директории
@@ -167,6 +168,10 @@ const fonts = () => {
   return src(`${dirs.src}/fonts/*.{woff,woff2}`)
     .pipe(dest(`${dirs.dest}/fonts/`))
 };
+
+export const ghDeploy = () => {
+  ghpages.publish(dirs.dest)
+}
 
 export const json = series(deleteJson, mergeJson);
 
