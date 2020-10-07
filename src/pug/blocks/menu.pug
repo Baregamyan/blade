@@ -1,6 +1,0 @@
-.menu.menu--no-js
-  button.menu__trigger(id=menu.button.id type="button" aria-label=menu.button.aria.label aria-haspopup=menu.button.aria.isHaspopup aria-expanded=menu.button.aria.isExpanded aria-controls=menu.button.aria.controls)
-  ul.menu__list.menu__list--no-js(id=menu.id aria-labelledby=menu.button.id)
-    each item in menu.list
-      li
-        a.menu__item(class=currentPageHref===item.href ? "menu__item--active" : null href=currentPageHref===item.href?null:item.href) #{item.name}
