@@ -8,26 +8,23 @@
   margin-left: 16px;
 }
 
-.participants__cards {
-  width: 320px;
-  height: 456px;
-}
-
 .participants__list {
   list-style: none;
   padding-left: 0;
   box-sizing: border-box;
 }
 
-.participants__slide {
-}
-
 .participants__card {
   display: flex;
-  margin-bottom: 20px;
+}
+
+.participants__photos {
+  padding-bottom: 24px;
 }
 
 .participants__desc {
+  position: absolute;
+  
   margin-right: 12px;
   margin-left: 43px;
   writing-mode: vertical-rl;
@@ -37,21 +34,25 @@
 }
 
 .participants__photo {
+  padding-left: 72px;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 248px;
+  height: 320px;
+  @media (min-width: 400px) {
+    width: 100%;
+    height: initial;
+    // height: 100%;
+  }; 
 }
 
 .participants__author-card {
-  position: fixed;
   display: flex;
   box-sizing: border-box;
   padding: 16px;
-  left: 0;
-  bottom: 32px;
-  z-index: 11;
-  width: 300px;
-  height: 120px;
+  margin-top: -137px;
+  margin-bottom: 126px;
+  z-index: 1;
+  width: 90%;
   background-color: $color-bg-secondary;
 }
 
@@ -84,6 +85,7 @@
 }
 
 .participants__socials {
+  margin-left: auto;
   margin-right: inherit;
 }
 
@@ -105,8 +107,9 @@
   &--photos {
     display: flex;
     width: 36px;
-    left: 10px;
-    bottom: 140px;
+    top: initial;
+    left: 24px;
+    bottom: 138px;
   }
 }
 
@@ -131,5 +134,8 @@
 
 .participants__pagination {
   bottom: 0;
-  background: red;
+}
+
+.participants__photos-wrapper {
+  z-index: -1;
 }
