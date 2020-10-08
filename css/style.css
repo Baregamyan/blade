@@ -651,7 +651,7 @@ a
 .header
 {
     background-color: #7965ad;
-    background-image: url('images/bfw.svg');
+    background-image: url('../images/bfw.svg');
     background-repeat: no-repeat; 
     background-position: top 33% left -12px;
     background-size: 400px 219px;
@@ -747,11 +747,14 @@ a
     flex-direction: column;
 
     width: 28px;
+    height: 17px;
     margin-right: 25px;
     padding: 0;
 
+    cursor: pointer; 
+
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
 
     justify-content: center;
     align-items: flex-end;
@@ -839,7 +842,7 @@ a
     height: 100vh;
     padding-top: 93px;
 
-    background: url('images/bfw.svg'), linear-gradient(137deg, rgba(101, 78, 163, .87) 35.26%, rgba(95, 75, 139, .87) 88.11%);
+    background: url('../images/bfw.svg'), linear-gradient(137deg, rgba(101, 78, 163, .87) 35.26%, rgba(95, 75, 139, .87) 88.11%);
     background-repeat: no-repeat;
     background-position: top 23% left -12px, top left; 
     background-size: 400px 219px, 100% 100%;
@@ -1515,7 +1518,7 @@ a
     content: '';
     transform: translate(-50%, -50%);
 
-    background-image: url('/images/checked.svg');
+    background-image: url('../images/checked.svg');
     background-repeat: no-repeat;
 }
 
@@ -1569,12 +1572,12 @@ a
     content: '';
     transform: translate(-50%, -50%);
 
-    background-image: url('images/star.png');
+    background-image: url('../images/star.png');
     background-repeat: no-repeat;
 }
 .table__star--checked::before
 {
-    background-image: url('images/star-checked.png');
+    background-image: url('../images/star-checked.png');
 }
 
 .table
