@@ -5631,6 +5631,13 @@
 
   const participantsSlider = new Swiper('.participants__cards', {
     loop: true,
+    pagination: {
+      el: '.participants__pagination',
+      type: 'bullets',
+      bulletElement: 'button',
+      bulletClass: 'pagination__bullet',
+      bulletActiveClass: 'pagination__bullet--active'
+    },
     navigation: {
       nextEl: '.participants__control--main-next',
       prevEl: '.participants__control--main-prev'
@@ -5641,11 +5648,7 @@
   const participantsPhotosSlider = new Swiper('.participants__photos', {
     loop: true,
     direction: 'vertical',
-    pagination: {
-      el: '.participants__pagination',
-      clickable: true,
-      type: 'bullets'
-    },
+
     navigation: {
       nextEl: '.participants__control--photos-next',
       prevEl: '.participants__control--photos-prev',
