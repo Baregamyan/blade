@@ -77,12 +77,13 @@
   z-index: 3;
 
   width: 28px;
+  height: 17px;
 
   padding: 0;
   border: none;
   background-color: transparent;
 
-  
+  cursor: pointer;
 
   &--opened {
     & .header__burger {
