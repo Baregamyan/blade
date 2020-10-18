@@ -12,7 +12,7 @@ const aboutSlider = new Swiper('.about__photos', {
     nextEl: '.about__control--next',
     prevEl: '.about__control--prev'
   },
-  spaceBetween: 10
+  spaceBetween: 100
 });
 
 const participantsSlider = new Swiper('.participants__cards', {

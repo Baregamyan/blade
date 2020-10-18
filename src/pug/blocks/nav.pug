@@ -3,7 +3,7 @@ nav.nav(aria-label=nav.aria.label aria-hidden="false")
     ul.nav__list
       each item in nav.list
         li
-          a.nav__item(class=data.href===item.href ? "menu__item--active" : null href=data.href===item.href ? null : item.href) #{item.name}
+          a.nav__item(class=data.href===item.href ? "nav__item--active" : null href=data.href===item.href ? null : item.href) #{item.name}
     ul.socials.socials--adaptive
       each social in about.socials
         +social(social)

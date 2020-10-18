@@ -273,6 +273,13 @@
 					"label": "Открыть меню с выбором языка",
 					"pressed": "false",
 					"haspopup": "menu"
+				},
+				"current": "Рус",
+				"svg": {
+					"id": "triangle",
+					"width": "9",
+					"height": "6",
+					"viewbox": "0 0 9 6"
 				}
 			},
 			"id": "menuLang",
@@ -434,11 +441,23 @@
 		"buttons": [
 			{
 				"modifyer": "up",
-				"ariaLabel": "Предыдущий экран"
+				"ariaLabel": "Предыдущий экран",
+				"svg": {
+					"id": "back",
+					"width": "10",
+					"height": "20",
+					"viewBox": "0 0 477.175 477.175"
+				}
 			},
 			{
 				"modifyer": "up",
-				"ariaLabel": "Предыдущий экран"
+				"ariaLabel": "Предыдущий экран",
+				"svg": {
+					"id": "back",
+					"width": "10",
+					"height": "20",
+					"viewBox": "0 0 477.175 477.175"
+				}
 			}
 		],
 		"total": "05"

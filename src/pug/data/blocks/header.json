@@ -25,6 +25,13 @@
           "label": "Открыть меню с выбором языка",
           "pressed": "false",
           "haspopup": "menu"
+        },
+        "current": "Рус",
+        "svg": {
+          "id": "triangle",
+          "width": "9",
+          "height": "6",
+          "viewbox": "0 0 9 6"
         }
       },
       "id": "menuLang",

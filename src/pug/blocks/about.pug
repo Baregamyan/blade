@@ -21,13 +21,14 @@ section.about
             each social in about.socials
               +social(social.href, social.modifyer, social.name)
         .about__photos-container
-          .swiper-slider.about__photos
-            .swiper-wrapper.about__photos-wrapper
-              each photo in about.photos
-                .swiper-slide.about__photo-wrapper
-                  img.swiper-slide.about__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
-            .about__controls
-              each control in about.controls
-                button.about__control(class=`about__control--${control.modify}` type="button")
-                  svg.about__control-svg(viewBox=control.svg.viewBox width=control.svg.width height=control.svg.height)
-                    use(xlink:href=control.svg.id)
+          .about__photos-frame
+            .swiper-slider.about__photos
+              .swiper-wrapper.about__photos-wrapper
+                each photo in about.photos
+                  .swiper-slide.about__photo-wrapper
+                    img.swiper-slide.about__photo(src=photo.src alt=photo.alt width=photo.width height=photo.height)
+              .about__controls
+                each control in about.controls
+                  button.about__control(class=`about__control--${control.modify}` type="button")
+                    svg.about__control-svg(viewBox=control.svg.viewBox width=control.svg.width height=control.svg.height)
+                      use(xlink:href=control.svg.id)

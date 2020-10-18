@@ -4,8 +4,10 @@ mixin pageNav(number)
       each button in pageNav.buttons
         li
           button.page-nav__button(class=`page-nav__button--${button.modifyer}` type="button" aria-label=button.ariaLabel)
+            svg.participants__svg(viewBox=button.svg.viewBox width=button.svg.width height=button.svg.height)
+              use(xlink:href=`#${button.svg.id}`)
     .page-nav__wrapper
-      span.page-nav__number(class="page-nav__number--active") #{number}/
+      span.page-nav__number(class="page-nav__number--active") #{number} / 
       span.page-nav__number #{pageNav.total}
 
 mixin hashtag(params)

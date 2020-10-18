@@ -9,6 +9,13 @@
   background-color: white;
   transition: $transition;
   transform: translateX(-100%);
+  @media #{$media-desktop} {
+    margin-right: 122px;
+    position: relative;
+    margin-left: auto;
+    transform: none;
+    background-color: initial;
+  }
 }
 
 .nav__wrapper {
@@ -19,6 +26,13 @@
   background-size: 400px 219px, 100% 100%;
   background-repeat: no-repeat;
   background-position: top 23% left -12px, top left;
+
+  @media #{$media-desktop} {
+    width: initial;
+    height: initial;
+    background: inherit;
+    padding-top: 0;
+  }
 }
 
 .nav__list {
@@ -36,11 +50,20 @@
       border-bottom: none;
     }
   }
+
+  @media #{$media-desktop} {
+    min-width: 712px;
+    justify-content: space-between;
+    flex-direction: row;
+    & li {
+      border-bottom: none;
+    }
+  }
 }
 
 .nav__item {
   display: block;
-  width: 288px;
+  width: 120px;
 
   text-align: center;
 
@@ -55,4 +78,26 @@
   letter-spacing: 0.03;
 
   color: $color-bg;
+  @media #{$media-desktop} {
+    font-family: $font-family;
+    font-size: $font-size;
+    text-transform: uppercase;
+  }
+  &--active {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 100%;
+      height: 16px;
+
+      left: 50%;
+      bottom: 18px;
+
+      background-color: $color-primary;
+      z-index: -1;
+      transform: translateX(-50%);
+    }
+  }
 }

@@ -3,10 +3,8 @@
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gapSm;
-  padding-left: $gapSm;
-  @media #{$media-lg} {
-    max-width: $width-xl;
+  @media #{$media-desktop} {
+    max-width: $width-desktop;
   }
 }
 
@@ -21,9 +19,7 @@
     font-weight: $font-weight-black;
   }
   @media #{$media-desktop} {
-    font-family: $font-family;
-    font-size: $font-size;
-    font-weight: $font-weight-bold
+    font-size: $font-size-huge-desktop;
   }
 }
 

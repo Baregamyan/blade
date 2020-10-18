@@ -6,6 +6,9 @@ header.header
     include ../blocks/nav.pug
     .header__lang-wrapper
       button.header__lang-button(type="button" aria-label=header.lang.button.aria.label aria-pressed=header.lang.button.aria.pressed aria-haspopup=header.lang.button.aria.haspopup)
+        span.header__lang-button-text #{header.lang.button.current}
+        svg.header__lang-button-svg(width=header.lang.button.svg.width height=header.lang.button.svg.height viewBox=header.lang.button.svg.viewBox)
+          use(xlink:href=`#${header.lang.button.svg.id}`)
       menu.header__lang-menu(id=header.lang.id aria-expanded=header.lang.aria.expanded aria-hidden=header.lang.aria.hidden)
         each lang in header.lang.list
           li.header__lang-item

@@ -4,13 +4,26 @@
   background-position: top 33% left -12px;
   background-image: url("../images/bfw.svg");
   background-repeat: no-repeat;
+  @media #{$media-tablet} {
+    background-size: 920px 504px;
+  }
+  @media #{$media-desktop} {
+    background-size: 1400px 767px;
+    background-position: top 200px left -12px;
+  }
 }
 
 .header__wrapper {
+  @include container;
+  padding-right: 40px;
+  padding-left: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  @media #{$media-desktop} {
+    margin-bottom: 160px;
+  }
 }
 
 .header__logo {
@@ -28,9 +41,24 @@
   width: 138px;
   height: 92px;
 
-  svg {
+  & svg {
     width: 103px;
     height: 24px;
+  }
+
+  @media #{$media-tablet} {
+    margin-left: 24px;
+  }
+
+  @media #{$media-desktop} {
+    margin-left: 0;
+    width: 260px;
+    height: 145px;
+
+    & svg {
+      width: 180px;
+      height: 42px;
+    }
   }
 }
 
@@ -39,6 +67,30 @@
   z-index: 3;
   font-size: 16px;
   font-weight: $font-weight-semibold;
+  @media #{$media-desktop} {
+    display: block;
+  }
+}
+
+.header__lang-button {
+  font-size: $font-size;
+  background-color: transparent;
+  text-transform: uppercase;
+  opacity: .6;
+  border: none;
+  color: $color-bg;
+}
+
+.header__lang-button-svg {
+  fill: $color-bg;
+}
+
+.header__lang-button-text {
+  padding-right: 4px;
+}
+
+.header__lang-menu {
+  display: none;
 }
 
 .header__lang-adaptive {
@@ -99,6 +151,9 @@
         transform: rotate(-45deg);
       }
     }
+  }
+  @media #{$media-desktop} {
+    display: none;
   }
 }
 
